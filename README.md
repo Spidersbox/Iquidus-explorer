@@ -42,6 +42,15 @@ Create user with read/write access:
 
     > db.addUser( { user: "username", pwd: "password", roles: [ "readWrite"] })
 
+txex
+db.txes.createIndex({total: 1})
+db.txes.createIndex({total: -1})
+db.txes.createIndex({blockindex: 1})
+db.txes.createIndex({blockindex: -1})
+
+addresstxes
+db.addresstxes.createIndex({a_id: 1, blockindex: -1})
+
 ### Get the source
 
     git clone https://github.com/iquidus/explorer explorer
